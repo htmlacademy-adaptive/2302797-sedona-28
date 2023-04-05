@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/header/main-logo-phone.svg" width="185" height="96" alt="Логотип:«Седона».">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть главное меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фото и Видео</a>
+          </li>
+        </ul>
+        <ul class="feedback-list">
+          <li class="feedback-list__item feedback-list__item--current">
+            <a class="feedback-list__link" href="#">Форма и отзывы</a>
+          </li>
+          <li class="feedback-list__item">
+            <a class="feedback-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1 class="visually-hidden">Sedona</h1>
+    <img class="main-content__image" src="img/main/sedona.svg" alt="Sedona." width="45" height="108">
+    <section class="prime-preview">
+      <div class="prime-preview__wrapper">
+        <h2 class="prime-preview__slogan">Оставьте свой отзыв</h2>
+        <p class="prime-preview__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </section>
+
+    <form class="data-form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="data-form__group">
+        <p class="data-form__legend">Представьтесь:</p>
+        <label class="data-form__label" for="first-name">Имя<sup>*</sup>:</label>
+        <input class="data-form__text-input" type="text" name="first-name" placeholder="Пётр" id="first-name" required>
+        <label class="data-form__label" for="surname">Фамилия<sup>*</sup>:</label>
+        <input class="data-form__text-input" type="text" name="surname" placeholder="Пустота" id="surname" required>
+        <label class="data-form__label" for="patronymic">Отчество:</label>
+        <input class="data-form__text-input" type="text" name="patronymic" placeholder="Викторович" id="patronymic">
+      </fieldset>
+
+      <fieldset class="data-form__group">
+        <p class="data-form__legend">Контактная информация:</p>
+        <label class="data-form__label" for="user-email">Контактный телефон<sup>*</sup>:</label>
+        <input class="data-form__text-input" type="tel" name="user-phone" placeholder="Введите телефон" id="user-phone" required>
+        <label class="data-form__label" for="user-email">Электронная почта<sup>*</sup>:</label>
+        <input class="data-form__text-input" type="email" name="user-email" placeholder="Введите e-mail" id="user-email" required>
+      </fieldset>
+
+      <fieldset class="data-form__group">
+        <p class="data-form__legend">Ваше общее впечатление:</p>
+        <div class="data-form__wrapper">
+          <input class="data-form__radio" type="radio" name="filling" value="positive" id="radio-positive" checked>
+          <label class="data-form__label" for="radio-positive">Скорее положительное</label>
+          <input class="data-form__radio" type="radio" name="filling" value="negative" id="radio-negative">
+          <label class="data-form__label" for="radio-negative">Скорее отрицательное</label>
+          <input class="data-form__radio" type="radio" name="filling" value="no-answer" id="radio-no-answer">
+          <label class="data-form__label" for="radio-no-answer">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="data-form__group">
+        <p class="data-form__legend">Посещенные достопримечательности:</p>
+        <div class="data-form__wrapper">
+          <input class="data-form__checkbox" type="checkbox" name="bridge" value="bridge" id="checkbox-bridge" checked>
+          <label class="data-form__label" for="checkbox-bridge">Мост Дьявола</label>
+          <input class="data-form__checkbox" type="checkbox" name="park" value="park" id="checkbox-park" checked>
+          <label class="data-form__label" for="checkbox-park">Слайд-парк</label>
+          <input class="data-form__checkbox" type="checkbox" name="mountain" value="mountain" id="checkbox-mountain" checked>
+          <label class="data-form__label" for="checkbox-mountain">Гора-Колокол</label>
+          <input class="data-form__checkbox" type="checkbox" name="red-rocks" value="red-rocks" id="checkbox-red-rocks">
+          <label class="data-form__label" for="checkbox-red-rocks">Красные скалы</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="data-form__group">
+        <label class="data-form__label" for="message-area">Опишите свои эмоции:</label>
+        <textarea class="data-form__textarea" name="message" rows="5" placeholder="Опишите подробно все свои восторги" id="message-area"></textarea>
+      </fieldset>
+
+      <button class="data-form__button" type="submit">Отправить отзыв</button>
+      <span class="data-form__note">* — обязательные поля</span>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="hashtag">
+        <a class="hashtag__link" href="#">#VisitSedona</a>
+      </div>
+      <div class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="social__link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+        <a class="social__link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </div>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">logo htmlacademy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
